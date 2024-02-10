@@ -1,0 +1,264 @@
+
+---
+title: Introducción a la visualización de datos 
+subtitle: con {ggplot2}
+format: kakashi-revealjs
+author:
+  - name: Dra. Sara E. Acevedo
+    email: seaceved@uc.cl
+    affiliations: Pontificia Universidad Católica de Chile Facultad de Agronomía y Sistemas Naturales
+footer: saryace.github.io/taller_ggplot2_2024
+---
+
+## Antes de comenzar
+
+1. Muchas gracias por motivarte a participar
+2. La clase quedará grabada y el material disponible
+3. Preguntas por el chat 
+
+## Recapitulación taller intro R
+
+### Funciones
+
+Una ´function´ forma una expresión en R, la cual tiene una salida (output)
+
+```{r, eval=FALSE}
+funcion(argumento_1 = named_argumento_1, 
+        argumenot_2 = named_argumento_2,
+              [etc.])
+```
+
+Como seria en la vida real
+
+```{r, eval=FALSE}
+lavar_ropa(ropa = c("poleras","calcetines"), #argumento ropa
+           detergente = ph_neutro, #argumento limpiador
+           nivel_sucio = 5) # poco sucio = 1, muy sucio = 5
+
+output =  ropa_limpia
+```
+
+## Tidyverse
+* Reusar estructuras de datos
+* Utilizar el operador `pipe %>% ` para combinar funciones
+* Pensado en humanos
+
+## Tidyverse
+::: {.incremental}
+- Ingredientes (harina, azúcar, etc.) 🛒
+- Mezclar en un bowl ingredientes 🥣
+- Hornear la mezcla ⏲️
+- Decorar el bizcocho 🥧
+- Cortar 🍰
+:::
+
+## estilo Tidyverse
+
+```{r}
+#| eval: false
+comprar(ingredientes = c((harina,azucar))) %>% 
+mezclar() %>% 
+hornear() %>% 
+decorar() %>% 
+cortar()
+
+```
+
+[Idea de Arthur Welles @ArthurWelle](https://twitter.com/ArthurWelle)
+
+
+## Operadores
+Los operadores son símbolos que le indican a R que debe realizar una tarea. Combinando datos + operadores + funciones R hace su trabajo. Los hay:
+
+- Asignación
+- Aritméticos
+- Relacionales
+- Lógicos
+
+[Más info de operadores aritméticos](https://es.r4ds.hadley.nz/transform.html#mutate-funs)
+
+## Asignación
+
+|  Operador | Operación  |
+|---|---|
+|   `<-` | Asigna un valor a una variable  |
+|   `=` | Asigna un valor a una variable  |
+
+## Aritméticos
+
+|  Operador | Operación  |
+|---|---|
+|   `+` | Suma    |
+|   `-` | Resta   |
+|   `*` | Multiplicación    |
+|   `/` | División    |
+|   `^` | Potencia    |
+|  `%%` | División entera |
+
+## Relacionales
+
+|  Operador | Operación  |
+|---|---|
+|   `<` | Menor que  |
+|   `<=` | Menor o igual que   |
+|   `>` | Mayor o igual que |
+|   `>=` | División    |
+|   `==` | Exactamente igual que |
+|  `!=` | No es igual que |
+
+## Lógicos
+
+|  Operador | Operación  |
+|---|---|
+| x &#x7c; y | x Ó y es verdadero  |
+| x & y | x Y y es verdadero  |
+|   !x | x no es verdadero (negación) |
+|   isTRUE(x) | x es verdadero (afirmación) |
+
+## Utilidad de ggplot2
+
+![](img/data-science.svg)
+
+## Utilidad de ggplot2
+
+![](img/paper-ggplot2.jpeg)
+
+[Paper de la figura](https://doi.org/10.1016/j.marpol.2018.04.022)
+
+## Utilidad de ggplot2
+
+![](img/dataviz-ggplot2.png){fig-align="center"}
+
+[Código R por Deepali Kank](https://github.com/deepdk/30-Day-Chart-Challenge-2023?tab=readme-ov-file)
+
+## Donde buscar ayuda e inspiración
+
+* ggplot2 fue lanzado el 2007, siempre es bueno ver tutoriales recientes
+
+[Guía de funciones](https://diegokoz.github.io/intro_ds/fuentes/ggplot2-cheatsheet-2.1-Spanish.pdf) Resumen en español de las funciones de ggplot2
+
+[Cedric Scherer](https://www.cedricscherer.com/tags/ggplot2/) Blog de Cedric Scherer 
+
+[RladiesChile](https://vimeo.com/rladieschile) Video de visualización 
+
+## Tipos de datos
+
+Las estructuras de datos que se usan para graficar en ggplot2 son:
+
+* Vectores
+* Tibble / dataframe
+
+## Tipos de datos
+
+Antes de graficar, un repaso de los tipos de datos que podemos usar
+
+Enteros
+```{r}
+estaciones_registradas <- c(1L, 1L, 1L, 3L, 3L, 2L,
+                            3L, 1L, 2L, 3L, 1L, 2L)
+class(estaciones_registradas)
+```
+
+Numéricos
+```{r}
+lluvia_prom_mensual <- c(0, 0, 0.5, 8, 8.7, 11.2,
+                         13.7, 12.3, 5.1, 0.5, 0.2, 0)
+class(lluvia_prom_mensual)
+```
+## Tipos de datos
+
+Character
+```{r}
+meses_registrados <- c("enero", "febrero", "marzo", "abril",
+                       "mayo","junio", "julio", "agosto",
+                       "septiembre", "octubre",
+                       "noviembre", "diciembre")
+class(meses_registrados)
+```
+
+```{r}
+sort(meses_registrados)
+```
+
+## Tipos de datos
+Factores
+```{r}
+niveles_meses <- c(
+"enero", "febrero", "marzo", "abril",
+"mayo", "junio", "julio", "agosto",
+"septiembre", "octubre", "noviembre", "diciembre"
+)
+
+meses_registrados_fct <- factor(meses_registrados,
+                                levels = niveles_meses) 
+
+```
+
+```{r}
+sort(meses_registrados_fct)
+```
+## Tipos de datos
+Fechas
+```{r}
+hora_muestreo <- as.Date(c(
+"2024-01-10 12:00:00 -03",
+"2024-02-10 12:00:00 -03",
+"2024-03-10 12:00:00 -03",
+"2024-04-10 12:00:00 -03",
+"2024-05-10 12:00:00 -03",
+"2024-06-10 12:00:00 -03",
+"2024-07-10 12:00:00 -03",
+"2024-08-10 12:00:00 -03",
+"2024-09-10 12:00:00 -03",
+"2024-10-10 12:00:00 -03",
+"2024-11-10 12:00:00 -03",
+"2024-12-10 12:00:00 -03"
+))
+
+class(hora_muestreo)
+
+```
+
+## ggplot2 y su sintáxis
+
+```{r}
+#| eval: false
+# funcion ggplot en general -----------------------------------------------
+
+ggplot(mapping = aes(x = <VECTOR>, y = <VECTOR>)) +
+geom_*()
+
+ggplot(data = <tibble o dataframe>,
+       mapping = aes(x = <columna del eje x>,
+                      y = <columna del eje y>)) +
+geom_*()
+
+```
+
+## ggplot2 y su sintáxis
+
+```{r}
+#| label: flipbookexample-full
+#| echo: true
+#| output-location: column
+#| code-line-numbers: true
+library(flipbookr)
+library(tidyverse)
+ggplot(mapping = 
+aes(x = lluvia_prom_mensual, 
+y = meses_registrados_fct, 
+fill = estaciones_registradas)) +
+geom_col() +
+coord_flip() +
+labs(x = "Lluvia promedio (mm)",
+     y = NULL) +
+guides(fill = "none") +
+theme_bw() +
+theme(axis.text.x = element_text(angle = 90)) 
+```
+
+`r chunk_reveal("flipbookexample-full", platform = "quarto", title = "Construcción de capas", smallcode = TRUE)`
+
+## 
+
+
