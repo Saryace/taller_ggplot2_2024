@@ -6,10 +6,27 @@ ggplot(mapping = aes(x = datos_pinguinos_limpios$mass_kg,
                        y = datos_pinguinos_limpios$flipper_length_mm)) +
 geom_point()
 
+# Sin usar mapping = ------------------------------------------------------
+
+# ggplot(datos, mapping) # orden de los argumentos
+# Algunos participantes les funciono, a otro no
+
+# En la version de la profesora no funciono =( ----------------------------
+
+# ggplot(aes(x = datos_pinguinos_limpios$mass_kg,
+#                      y = datos_pinguinos_limpios$flipper_length_mm)) +
+#   geom_point()
+
 # Usando argumento data ---------------------------------------------------
 
 ggplot(data = datos_pinguinos_limpios,
   mapping = aes(x = mass_kg, y = flipper_length_mm)) +
+  geom_point()
+
+# Sin detallar data y mapping ---------------------------------------------
+
+ggplot(datos_pinguinos_limpios,
+       aes(x = mass_kg, y = flipper_length_mm)) +
   geom_point()
 
 # Tercera forma, tidyverse ------------------------------------------------
@@ -79,6 +96,14 @@ ggsave("figuras/plot_peso_vs_aleta.png", #directorio
 datos_pinguinos_limpios %>% 
   ggplot(mapping = aes(x = mass_kg, y = flipper_length_mm, color = sex)) +
   geom_point(color = "red") + # se ejecuta rojo porque es lo ultimo
+  labs(x= "Peso (kg)", y = "Largo aleta (mm)") +
+  theme_bw()
+
+# Quiero todos los puntos verdes ------------------------------------------
+
+datos_pinguinos_limpios %>% 
+  ggplot(mapping = aes(x = mass_kg, y = flipper_length_mm)) +
+  geom_point(color = "green") + # se ejecuta rojo porque es lo ultimo
   labs(x= "Peso (kg)", y = "Largo aleta (mm)") +
   theme_bw()
 

@@ -22,6 +22,9 @@ datos_pinguinos_crudos %>% # tidyverse
 # funcion count() cuenta por columna elegida
 
 datos_pinguinos_crudos %>% 
+  count(sex) 
+
+datos_pinguinos_crudos %>% 
   count(is.na(sex)) # hay 11 pinguinos sin categoria
 
 # Operador (!) significa lo opuesto
