@@ -1,0 +1,247 @@
+[
+  {
+    "objectID": "index.html#antes-de-comenzar",
+    "href": "index.html#antes-de-comenzar",
+    "title": "Introducción a la visualización de datos",
+    "section": "Antes de comenzar",
+    "text": "Antes de comenzar\n\nMuchas gracias por motivarte a participar\nLa clase quedará grabada y el material disponible acá\nPreguntas por el chat"
+  },
+  {
+    "objectID": "index.html#recapitulación-taller-intro-r",
+    "href": "index.html#recapitulación-taller-intro-r",
+    "title": "Introducción a la visualización de datos",
+    "section": "Recapitulación taller intro R",
+    "text": "Recapitulación taller intro R\nFunciones\nUna ´function´ forma una expresión en R, la cual tiene una salida (output)\n\nfuncion(argumento_1 = named_argumento_1, \n        argumenot_2 = named_argumento_2,\n              [etc.])\n\nComo seria en la vida real\n\nlavar_ropa(ropa = c(\"poleras\",\"calcetines\"), #argumento ropa\n           detergente = ph_neutro, #argumento limpiador\n           nivel_sucio = 5) # poco sucio = 1, muy sucio = 5\n\noutput =  ropa_limpia"
+  },
+  {
+    "objectID": "index.html#tidyverse",
+    "href": "index.html#tidyverse",
+    "title": "Introducción a la visualización de datos",
+    "section": "Tidyverse",
+    "text": "Tidyverse\n\nReusar estructuras de datos\nUtilizar el operador pipe %&gt;% para combinar funciones\nPensado en humanos"
+  },
+  {
+    "objectID": "index.html#tidyverse-1",
+    "href": "index.html#tidyverse-1",
+    "title": "Introducción a la visualización de datos",
+    "section": "Tidyverse",
+    "text": "Tidyverse\n\n\nIngredientes (harina, azúcar, etc.) 🛒\nMezclar en un bowl ingredientes 🥣\nHornear la mezcla ⏲️\nDecorar el bizcocho 🥧\nCortar 🍰"
+  },
+  {
+    "objectID": "index.html#estilo-tidyverse",
+    "href": "index.html#estilo-tidyverse",
+    "title": "Introducción a la visualización de datos",
+    "section": "estilo Tidyverse",
+    "text": "estilo Tidyverse\n\ncomprar(ingredientes = c((harina,azucar))) %&gt;% \nmezclar() %&gt;% \nhornear() %&gt;% \ndecorar() %&gt;% \ncortar()\n\nIdea de Arthur Welles @ArthurWelle"
+  },
+  {
+    "objectID": "index.html#operadores",
+    "href": "index.html#operadores",
+    "title": "Introducción a la visualización de datos",
+    "section": "Operadores",
+    "text": "Operadores\nLos operadores son símbolos que le indican a R que debe realizar una tarea. Más info de operadores acá\n\nAsignación\nAritméticos\nRelacionales\nLógicos"
+  },
+  {
+    "objectID": "index.html#asignación",
+    "href": "index.html#asignación",
+    "title": "Introducción a la visualización de datos",
+    "section": "Asignación",
+    "text": "Asignación\n\n\n\nOperador\nOperación\n\n\n\n\n&lt;-\nAsigna un valor a una variable\n\n\n=\nAsigna un valor a una variable"
+  },
+  {
+    "objectID": "index.html#aritméticos",
+    "href": "index.html#aritméticos",
+    "title": "Introducción a la visualización de datos",
+    "section": "Aritméticos",
+    "text": "Aritméticos\n\n\n\nOperador\nOperación\n\n\n\n\n+\nSuma\n\n\n-\nResta\n\n\n*\nMultiplicación\n\n\n/\nDivisión\n\n\n^\nPotencia\n\n\n%%\nDivisión entera"
+  },
+  {
+    "objectID": "index.html#relacionales",
+    "href": "index.html#relacionales",
+    "title": "Introducción a la visualización de datos",
+    "section": "Relacionales",
+    "text": "Relacionales\n\n\n\nOperador\nOperación\n\n\n\n\n&lt;\nMenor que\n\n\n&lt;=\nMenor o igual que\n\n\n&gt;\nMayor o igual que\n\n\n&gt;=\nDivisión\n\n\n==\nExactamente igual que\n\n\n!=\nNo es igual que"
+  },
+  {
+    "objectID": "index.html#lógicos",
+    "href": "index.html#lógicos",
+    "title": "Introducción a la visualización de datos",
+    "section": "Lógicos",
+    "text": "Lógicos\n\n\n\nOperador\nOperación\n\n\n\n\nx | y\nx Ó y es verdadero\n\n\nx & y\nx Y y es verdadero\n\n\n!x\nx no es verdadero (negación)\n\n\nisTRUE(x)\nx es verdadero (afirmación)"
+  },
+  {
+    "objectID": "index.html#utilidad-de-ggplot2",
+    "href": "index.html#utilidad-de-ggplot2",
+    "title": "Introducción a la visualización de datos",
+    "section": "Utilidad de ggplot2",
+    "text": "Utilidad de ggplot2"
+  },
+  {
+    "objectID": "index.html#utilidad-de-ggplot2-1",
+    "href": "index.html#utilidad-de-ggplot2-1",
+    "title": "Introducción a la visualización de datos",
+    "section": "Utilidad de ggplot2",
+    "text": "Utilidad de ggplot2\n\nPaper de la figura"
+  },
+  {
+    "objectID": "index.html#utilidad-de-ggplot2-2",
+    "href": "index.html#utilidad-de-ggplot2-2",
+    "title": "Introducción a la visualización de datos",
+    "section": "Utilidad de ggplot2",
+    "text": "Utilidad de ggplot2\n\nCódigo R por Deepali Kank"
+  },
+  {
+    "objectID": "index.html#donde-buscar-ayuda-e-inspiración",
+    "href": "index.html#donde-buscar-ayuda-e-inspiración",
+    "title": "Introducción a la visualización de datos",
+    "section": "Donde buscar ayuda e inspiración",
+    "text": "Donde buscar ayuda e inspiración\n\nggplot2 fue lanzado el 2007, siempre es bueno ver tutoriales recientes\n\nGuía de funciones Resumen en español de las funciones de ggplot2\nCedric Scherer Blog de Cedric Scherer\nRladiesChile Video de visualización"
+  },
+  {
+    "objectID": "index.html#tipos-de-datos",
+    "href": "index.html#tipos-de-datos",
+    "title": "Introducción a la visualización de datos",
+    "section": "Tipos de datos",
+    "text": "Tipos de datos\nLas estructuras de datos que se usan para graficar en ggplot2 son:\n\nVectores\nTibble / dataframe"
+  },
+  {
+    "objectID": "index.html#tipos-de-datos-1",
+    "href": "index.html#tipos-de-datos-1",
+    "title": "Introducción a la visualización de datos",
+    "section": "Tipos de datos",
+    "text": "Tipos de datos\nVectores: colección de uno o más datos del mismo tipo\n\nedad_mascotas &lt;- c(2, 4, 8) \n\nnombres_mascotas &lt;- c(\"calita\", \"pepe\", \"ada\")"
+  },
+  {
+    "objectID": "index.html#tipos-de-datos-2",
+    "href": "index.html#tipos-de-datos-2",
+    "title": "Introducción a la visualización de datos",
+    "section": "Tipos de datos",
+    "text": "Tipos de datos\nDataframe/tibble: datos de dos dimensiones (rectangulares) que pueden contener datos de diferentes tipos\n\nlibrary(tidyverse) # carga la libreria tibble\n\ntabla_perros &lt;- \n  tibble(\n    edad_mascota = c(2,4,7),\n    nombres_mascotas = c(\"calita\", \"pepe\", \"ada\")\n  )\n\ntabla_perros\n\n# A tibble: 3 × 2\n  edad_mascota nombres_mascotas\n         &lt;dbl&gt; &lt;chr&gt;           \n1            2 calita          \n2            4 pepe            \n3            7 ada"
+  },
+  {
+    "objectID": "index.html#tipos-de-datos-3",
+    "href": "index.html#tipos-de-datos-3",
+    "title": "Introducción a la visualización de datos",
+    "section": "Tipos de datos",
+    "text": "Tipos de datos\nAntes de graficar, un repaso de los tipos de datos que podemos usar\nEnteros\n\nestaciones_registradas &lt;- c(1L, 1L, 1L, 3L, 3L, 2L,\n                            3L, 1L, 2L, 3L, 1L, 2L)\nclass(estaciones_registradas)\n\n[1] \"integer\"\n\n\nNuméricos\n\nlluvia_prom_mensual &lt;- c(0, 0, 0.5, 8, 8.7, 11.2,\n                         13.7, 12.3, 5.1, 0.5, 0.2, 0)\nclass(lluvia_prom_mensual)\n\n[1] \"numeric\""
+  },
+  {
+    "objectID": "index.html#tipos-de-datos-4",
+    "href": "index.html#tipos-de-datos-4",
+    "title": "Introducción a la visualización de datos",
+    "section": "Tipos de datos",
+    "text": "Tipos de datos\nCharacter\n\nmeses_registrados &lt;- c(\"enero\", \"febrero\", \"marzo\", \"abril\",\n                       \"mayo\",\"junio\", \"julio\", \"agosto\",\n                       \"septiembre\", \"octubre\",\n                       \"noviembre\", \"diciembre\")\nclass(meses_registrados)\n\n[1] \"character\"\n\n\n\nsort(meses_registrados)\n\n [1] \"abril\"      \"agosto\"     \"diciembre\"  \"enero\"      \"febrero\"   \n [6] \"julio\"      \"junio\"      \"marzo\"      \"mayo\"       \"noviembre\" \n[11] \"octubre\"    \"septiembre\""
+  },
+  {
+    "objectID": "index.html#tipos-de-datos-5",
+    "href": "index.html#tipos-de-datos-5",
+    "title": "Introducción a la visualización de datos",
+    "section": "Tipos de datos",
+    "text": "Tipos de datos\nFactores\n\nniveles_meses &lt;- c(\n\"enero\", \"febrero\", \"marzo\", \"abril\",\n\"mayo\", \"junio\", \"julio\", \"agosto\",\n\"septiembre\", \"octubre\", \"noviembre\", \"diciembre\"\n)\n\nmeses_registrados_fct &lt;- factor(meses_registrados,\n                                levels = niveles_meses) \n\n\nsort(meses_registrados_fct)\n\n [1] enero      febrero    marzo      abril      mayo       junio     \n [7] julio      agosto     septiembre octubre    noviembre  diciembre \n12 Levels: enero febrero marzo abril mayo junio julio agosto ... diciembre"
+  },
+  {
+    "objectID": "index.html#tipos-de-datos-6",
+    "href": "index.html#tipos-de-datos-6",
+    "title": "Introducción a la visualización de datos",
+    "section": "Tipos de datos",
+    "text": "Tipos de datos\nFechas\n\nhora_muestreo &lt;- as.Date(c(\n\"2024-01-10 12:00:00 -03\",\n\"2024-02-10 12:00:00 -03\",\n\"2024-03-10 12:00:00 -03\",\n\"2024-04-10 12:00:00 -03\",\n\"2024-05-10 12:00:00 -03\",\n\"2024-06-10 12:00:00 -03\",\n\"2024-07-10 12:00:00 -03\",\n\"2024-08-10 12:00:00 -03\",\n\"2024-09-10 12:00:00 -03\",\n\"2024-10-10 12:00:00 -03\",\n\"2024-11-10 12:00:00 -03\",\n\"2024-12-10 12:00:00 -03\"\n))\n\nclass(hora_muestreo)\n\n[1] \"Date\""
+  },
+  {
+    "objectID": "index.html#ggplot2-y-su-sintáxis",
+    "href": "index.html#ggplot2-y-su-sintáxis",
+    "title": "Introducción a la visualización de datos",
+    "section": "ggplot2 y su sintáxis",
+    "text": "ggplot2 y su sintáxis\n\n# funcion ggplot en general -----------------------------------------------\n\n# vectores\nggplot(mapping = aes(x = &lt;VECTOR&gt;, y = &lt;VECTOR&gt;)) +\ngeom_*()\n\n# tibble o dataframe\nggplot(data = &lt;tibble o dataframe&gt;,\n       mapping = aes(x = &lt;columna del eje x&gt;,\n                      y = &lt;columna del eje y&gt;)) +\ngeom_*()\n\n# tibble o dataframe tidyverse\ndatos %&gt;% \nggplot(mapping = aes(x = &lt;columna del eje x&gt;,\n                      y = &lt;columna del eje y&gt;)) +\ngeom_*()"
+  },
+  {
+    "objectID": "index.html#ggplot2-y-su-sintáxis-1",
+    "href": "index.html#ggplot2-y-su-sintáxis-1",
+    "title": "Introducción a la visualización de datos",
+    "section": "ggplot2 y su sintáxis",
+    "text": "ggplot2 y su sintáxis\n\n\nlibrary(flipbookr)\nlibrary(tidyverse)\nggplot(mapping = \naes(x = lluvia_prom_mensual, \ny = meses_registrados_fct, \nfill = estaciones_registradas)) +\ngeom_col() +\ncoord_flip() +\nlabs(x = \"Lluvia promedio (mm)\",\n     y = NULL) +\nguides(fill = \"none\") +\ntheme_bw() +\ntheme(axis.text.x = element_text(angle = 90))"
+  },
+  {
+    "objectID": "index.html#construcción-de-capas",
+    "href": "index.html#construcción-de-capas",
+    "title": "Introducción a la visualización de datos",
+    "section": "Construcción de capas",
+    "text": "Construcción de capas\n\n\n\nlibrary(flipbookr)"
+  },
+  {
+    "objectID": "index.html#construcción-de-capas-1",
+    "href": "index.html#construcción-de-capas-1",
+    "title": "Introducción a la visualización de datos",
+    "section": "Construcción de capas",
+    "text": "Construcción de capas\n\n\n\nlibrary(flipbookr)\nlibrary(tidyverse)"
+  },
+  {
+    "objectID": "index.html#construcción-de-capas-2",
+    "href": "index.html#construcción-de-capas-2",
+    "title": "Introducción a la visualización de datos",
+    "section": "Construcción de capas",
+    "text": "Construcción de capas\n\n\n\nlibrary(flipbookr)\nlibrary(tidyverse)\nggplot(mapping =\naes(x = lluvia_prom_mensual,\ny = meses_registrados_fct,\nfill = estaciones_registradas))"
+  },
+  {
+    "objectID": "index.html#construcción-de-capas-3",
+    "href": "index.html#construcción-de-capas-3",
+    "title": "Introducción a la visualización de datos",
+    "section": "Construcción de capas",
+    "text": "Construcción de capas\n\n\n\nlibrary(flipbookr)\nlibrary(tidyverse)\nggplot(mapping =\naes(x = lluvia_prom_mensual,\ny = meses_registrados_fct,\nfill = estaciones_registradas)) +\ngeom_col()"
+  },
+  {
+    "objectID": "index.html#construcción-de-capas-4",
+    "href": "index.html#construcción-de-capas-4",
+    "title": "Introducción a la visualización de datos",
+    "section": "Construcción de capas",
+    "text": "Construcción de capas\n\n\n\nlibrary(flipbookr)\nlibrary(tidyverse)\nggplot(mapping =\naes(x = lluvia_prom_mensual,\ny = meses_registrados_fct,\nfill = estaciones_registradas)) +\ngeom_col() +\ncoord_flip()"
+  },
+  {
+    "objectID": "index.html#construcción-de-capas-5",
+    "href": "index.html#construcción-de-capas-5",
+    "title": "Introducción a la visualización de datos",
+    "section": "Construcción de capas",
+    "text": "Construcción de capas\n\n\n\nlibrary(flipbookr)\nlibrary(tidyverse)\nggplot(mapping =\naes(x = lluvia_prom_mensual,\ny = meses_registrados_fct,\nfill = estaciones_registradas)) +\ngeom_col() +\ncoord_flip() +\nlabs(x = \"Lluvia promedio (mm)\",\n     y = NULL)"
+  },
+  {
+    "objectID": "index.html#construcción-de-capas-6",
+    "href": "index.html#construcción-de-capas-6",
+    "title": "Introducción a la visualización de datos",
+    "section": "Construcción de capas",
+    "text": "Construcción de capas\n\n\n\nlibrary(flipbookr)\nlibrary(tidyverse)\nggplot(mapping =\naes(x = lluvia_prom_mensual,\ny = meses_registrados_fct,\nfill = estaciones_registradas)) +\ngeom_col() +\ncoord_flip() +\nlabs(x = \"Lluvia promedio (mm)\",\n     y = NULL) +\nguides(fill = \"none\")"
+  },
+  {
+    "objectID": "index.html#construcción-de-capas-7",
+    "href": "index.html#construcción-de-capas-7",
+    "title": "Introducción a la visualización de datos",
+    "section": "Construcción de capas",
+    "text": "Construcción de capas\n\n\n\nlibrary(flipbookr)\nlibrary(tidyverse)\nggplot(mapping =\naes(x = lluvia_prom_mensual,\ny = meses_registrados_fct,\nfill = estaciones_registradas)) +\ngeom_col() +\ncoord_flip() +\nlabs(x = \"Lluvia promedio (mm)\",\n     y = NULL) +\nguides(fill = \"none\") +\ntheme_bw()"
+  },
+  {
+    "objectID": "index.html#construcción-de-capas-8",
+    "href": "index.html#construcción-de-capas-8",
+    "title": "Introducción a la visualización de datos",
+    "section": "Construcción de capas",
+    "text": "Construcción de capas\n\n\n\nlibrary(flipbookr)\nlibrary(tidyverse)\nggplot(mapping =\naes(x = lluvia_prom_mensual,\ny = meses_registrados_fct,\nfill = estaciones_registradas)) +\ngeom_col() +\ncoord_flip() +\nlabs(x = \"Lluvia promedio (mm)\",\n     y = NULL) +\nguides(fill = \"none\") +\ntheme_bw() +\ntheme(axis.text.x = element_text(angle = 90))"
+  },
+  {
+    "objectID": "index.html#formatos-long-y-wide",
+    "href": "index.html#formatos-long-y-wide",
+    "title": "Introducción a la visualización de datos",
+    "section": "Formatos long y wide",
+    "text": "Formatos long y wide\n\nEl formato wide es el formato típico tidy rectangular\n\n\ntidy data"
+  },
+  {
+    "objectID": "index.html#formatos-long-y-wide-1",
+    "href": "index.html#formatos-long-y-wide-1",
+    "title": "Introducción a la visualización de datos",
+    "section": "Formatos long y wide",
+    "text": "Formatos long y wide\n\nEl formato long se usa para agrupar\nEl formato long se usa para visualización de datos con ggplot2"
+  },
+  {
+    "objectID": "index.html#es-común-intercambiar-entre-formatos",
+    "href": "index.html#es-común-intercambiar-entre-formatos",
+    "title": "Introducción a la visualización de datos",
+    "section": "Es común intercambiar entre formatos",
+    "text": "Es común intercambiar entre formatos\nVeamos el repo tidyexplain"
+  }
+]
