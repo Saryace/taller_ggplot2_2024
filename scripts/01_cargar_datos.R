@@ -7,4 +7,4 @@ library(janitor) # funciones de limpieza
 
 # Cargar datos ------------------------------------------------------------
 
-datos_pinguinos_crudos <- read_excel("")
+datos_pinguinos_crudos <- read_excel("datos/penguins.xlsx")

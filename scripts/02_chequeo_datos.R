@@ -1,22 +1,30 @@
 # Primer paso, mirar los datos --------------------------------------------
 
-datos_pinguinos_raw %>% #pipe
+datos_pinguinos_crudos %>% #pipe
   glimpse() # echar un vistazo
 
-datos_pinguinos_raw %>% 
+datos_pinguinos_crudos %>% 
   summary() # darnos estadistica descriptiva
 
-head(datos_pinguinos_raw) # r base
+# Diferencia R base y tidyverse -------------------------------------------
+# head nos muestra por defecto las 6 primeras filas en la consola
 
-datos_pinguinos_raw %>% # tidyverse
+head(datos_pinguinos_crudos) # r base
+
+datos_pinguinos_crudos %>% # tidyverse
   head()
+
+# Para hacer analisis de datos necesitamos:
+# Datos + preguntas
 
 # Queremos hacer analisis por especies y sexo -----------------------------
 
-# Operador (!) significa lo opuesto
+# funcion count() cuenta por columna elegida
 
 datos_pinguinos_crudos %>% 
-  count(is.na(sex)) # vamos a contar los NA de sexo
+  count(is.na(sex)) # hay 11 pinguinos sin categoria
+
+# Operador (!) significa lo opuesto
 
 datos_pinguinos_crudos %>% 
   count(!is.na(sex)) # vamos a contar los NO NA´s
@@ -25,6 +33,6 @@ datos_pinguinos_crudos %>%
 
 datos_pinguinos_crudos %>% 
   count(sex) # contamos los machos, hembras y NA´s del dataset
-
+ 
 datos_pinguinos_crudos %>% 
   count(sex, island) # contamos por sexo e isla (dos columnas)
